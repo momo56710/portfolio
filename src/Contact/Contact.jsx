@@ -80,7 +80,7 @@ export default function Contact() {
       <Nav />
       <Box px={'2em'} maxW={'1500px'} margin={'auto'} mt={'7em'}>
         <Grid placeItems={'center'}>
-          <Flex w={'80vw'}>
+          <Flex w={{base : '95vw' , md : "80vw"}}>
             <Box
               pt={'3em'}
               bg={useColorModeValue('#0c1338', '#51a1a8')}

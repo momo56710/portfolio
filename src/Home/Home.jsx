@@ -26,6 +26,18 @@ export default function Home() {
           <Text fontSize={'1.3em'} textAlign={'center'}>
             web developer,video Editor and somehow a graphic designer
           </Text>
+          <Text
+            fontSize={'1.3em'} textAlign={'center'}
+            color={useColorModeValue('#5EBBC3', '#131B52')}
+            textDecor={'underline'}
+          >
+            <a
+              href="https://drive.google.com/file/d/1L_H2nOw7ke7W_K3teH6JKCfVL9vyEUK8/view?usp=sharing"
+              target="_blank"
+            >
+              Resume
+            </a>
+          </Text>
           <Grid
             width={{ base: '', md: '70%' }}
             templateColumns={{ base: '1fr', md: '1fr 1fr' }}
@@ -48,16 +60,15 @@ export default function Home() {
                   fontWeight={'bold'}
                   color={useColorModeValue('#5EBBC3', '#131B52')}
                 >
-                  Greetings ^^ 
+                  Greetings ^^
                 </Text>{' '}
                 <br />
-                <Text textAlign={{base : 'center' , md : 'left'}}>
-                 
+                <Text textAlign={{ base: 'center', md: 'left' }}>
                   Back in 2017 my friend showed me some of his HTML work and how
                   he built a web page with his photo on it i was so impressed
                   that now i'm building my career about it. <br />
-                  i'm a pc enthusiast and a juinor web developer with skills
-                  in video editing and graphic design
+                  i'm a pc enthusiast and a juinor web developer with skills in
+                  video editing and graphic design
                 </Text>
               </Text>
             </Box>

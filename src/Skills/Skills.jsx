@@ -21,7 +21,7 @@ export default function Skills() {
           ml={{ base: '0', md: '5em' }}
         >
           <Heading textAlign={'center'} m={'2em'} cursor={'pointer'}>
-            Programing Languages And developing related
+            Programming Languages And developing related
           </Heading>
 
           <Box
@@ -42,7 +42,7 @@ export default function Skills() {
           ml={{ base: '0', md: '5em' }}
         >
           <Heading textAlign={'center'} m={'2em'} cursor={'pointer'}>
-            Softwares
+            Software
           </Heading>
 
           <Box

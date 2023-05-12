@@ -1,7 +1,7 @@
 import { Box, useColorModeValue, Grid } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import React from 'react';
-import { FaBehance, FaEnvelope, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaDiscord } from 'react-icons/fa';
 export default function SideBar() {
   return (
     <Box
@@ -28,7 +28,12 @@ export default function SideBar() {
             style={{ cursor: 'pointer' }}
           >
             <Box _hover={{ color: useColorModeValue('#5EBBC3', '#131B52') }}>
-              <FaGithub fontSize={'2em'} />
+              <a
+                href="https://discordapp.com/users/731554886566674442"
+                target="_blank"
+              >
+                <FaDiscord fontSize={'2em'} />
+              </a>
             </Box>
           </motion.div>
           <motion.div
@@ -38,7 +43,9 @@ export default function SideBar() {
             style={{ cursor: 'pointer' }}
           >
             <Box _hover={{ color: useColorModeValue('#5EBBC3', '#131B52') }}>
-              <FaEnvelope fontSize={'2em'} />
+              <a href="https://www.instagram.com/momo_56710/" target="_blank">
+                <FaInstagram fontSize={'2em'} />
+              </a>
             </Box>
           </motion.div>
           <motion.div
@@ -48,9 +55,9 @@ export default function SideBar() {
             style={{ cursor: 'pointer' }}
           >
             <Box _hover={{ color: useColorModeValue('#5EBBC3', '#131B52') }}>
-              <FaBehance
-                fontSize={'2em'}
-              />
+              <a href="https://www.facebook.com/2003amine" target="_blank">
+                <FaFacebook fontSize={'2em'} />
+              </a>
             </Box>
           </motion.div>
         </Grid>

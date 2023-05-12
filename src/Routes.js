@@ -5,14 +5,21 @@ import Home from './Home/Home';
 import Skills from './Skills/Skills';
 import WebDev from './Work/WebDev/WebDev';
 import AnimationVideos from './Work/animationVideos/AnimationVideos';
+import Contact from './Contact/Contact';
+import CommingSoon from './CommingSoon';
+import GraphicDesign from './GraphicDesign/GraphicDesign';
 export default function RouteRoot() {
   return (
     <Routes>
-      <Route path="/" deafault element={<Hello />} />
-      <Route path="/home" deafault element={<Home />} />
-      <Route path="/skills" deafault element={<Skills />} />
-      <Route path="/work/websites" deafault element={<WebDev />} />
-      <Route path="/work/animations" deafault element={<AnimationVideos />} />
+      <Route path="/" element={<Hello />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/work/websites" element={<WebDev />} />
+      <Route path="/work/animations" element={<AnimationVideos />} />
+      <Route path="/work/design" element={<GraphicDesign />} />
+      <Route path="/contact"  element={<Contact />} />
+      <Route path="/comming-soon"  element={<CommingSoon />} />
+    
 
     </Routes>
   );

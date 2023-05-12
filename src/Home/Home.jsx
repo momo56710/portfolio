@@ -48,15 +48,15 @@ export default function Home() {
                   fontWeight={'bold'}
                   color={useColorModeValue('#5EBBC3', '#131B52')}
                 >
-                  Greetings ^^ ,
+                  Greetings ^^ 
                 </Text>{' '}
                 <br />
                 <Text textAlign={{base : 'center' , md : 'left'}}>
                  
-                  Back in 2017 my friend showed me some of his html work and how
+                  Back in 2017 my friend showed me some of his HTML work and how
                   he built a web page with his photo on it i was so impressed
-                  that now i'm building my career about it <br />
-                  i'm a pc enthusiast and i'm a juinor web developer with skills
+                  that now i'm building my career about it. <br />
+                  i'm a pc enthusiast and a juinor web developer with skills
                   in video edeting and graphic design
                 </Text>
               </Text>

@@ -6,7 +6,7 @@ const styles = {
    
     body: {
       color: mode('#E5E4F1', '#131B52')(props),
-      bg: mode('#131B52', '#E5E4F1')(props),
+      bg: mode('#131B52', '#5EBBC3')(props),
     },
    
   }),

@@ -4,8 +4,6 @@ import {
   Grid,
   Button,
   useColorModeValue,
-  background,
-  useTimeout,
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -24,12 +22,14 @@ export default function Hello() {
             <Heading
               className="animate__animated animate__fadeInDown"
               fontSize={'3em'}
+              textAlign={'center'}
             >
               Hello
             </Heading>
             <Heading
               className="animate__animated animate__fadeInUp"
               fontSize={'3em'}
+              textAlign={'center'}
             >
               Welcome to my profile
             </Heading>
@@ -43,7 +43,7 @@ export default function Hello() {
             <Button
               padding={'1em'}
               fontSize={'2em'}
-              bg={useColorModeValue('#131B42', '#E5E4F1')}
+              bg={useColorModeValue('#131B42', '#d9d7ea')}
               color={useColorModeValue('#E5E4F1', '#131B42')}
               _hover={{}}
               onClick={() => {

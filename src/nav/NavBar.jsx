@@ -69,7 +69,7 @@ export default function NavBar() {
           </Flex>
         </Flex>
       </Flex>
-      <Box bg={useColorModeValue('#E5E4F120', '#131B5220')} w={'100vw'}>
+      <Box bg={useColorModeValue('#131B5298', '#E5E4F198')} w={'100vw'}>
       <Collapse in={isOpen} animateOpacity>
          <MobileNav />
        
@@ -81,7 +81,8 @@ export default function NavBar() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue('#E5E4F1', '#131B42');
-  const popoverContentBgColor = useColorModeValue('#131B42', '#E5E4F1');
+  const hoverLinkColor = useColorModeValue('#5EBBC3', '#131B52')
+  const popoverContentBgColor = useColorModeValue('#131B52','#5EBBC3');
 
   return (
     <Stack direction={'row'} spacing={4}>
@@ -99,6 +100,7 @@ const DesktopNav = () => {
                 _hover={{
                   opacity: 1,
                   textDecoration: 'none',
+                  color : hoverLinkColor
                 }}
               >
                 {navItem.label}
@@ -130,10 +132,12 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
-    <Link href={href} role={'group'} display={'block'} p={2} rounded={'md'}>
+    <Link href={href} role={'group'} display={'block'} p={2} rounded={'md'} _hover={
+      {color : useColorModeValue('#5EBBC3', '#131B52')}
+    }>
       <Stack direction={'row'} align={'center'}>
         <Box>
-          <Text transition={'all .3s ease'} fontWeight={500}>
+          <Text fontWeight={500}>
             {label}
           </Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
@@ -249,7 +253,11 @@ const NAV_ITEMS = [
     href: '/home',
   },
   {
-    label: 'skills',
+    label: 'Experience',
+    href: '#',
+  },
+  {
+    label: 'Skills',
     href: '#',
   },
   {

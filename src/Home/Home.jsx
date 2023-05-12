@@ -36,7 +36,7 @@ export default function Home() {
             <Box
               mt={'2em'}
               overflow={'hidden'}
-              w={{ base: '80vw', md: '20em' }}
+              w={'80%'}
               aspectRatio={1}
               borderRadius={'50%'}
             >

@@ -24,7 +24,7 @@ export default function NavBar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box position={{ base: 'initial', md: 'fixed' }} mr={'2em'}>
+    <Box position={{ base: 'initial', md: 'fixed' }} mr={'2em'} >
       <Flex
         color={useColorModeValue('#E5E4F1', '#131B42')}
         minH={'60px'}
@@ -55,7 +55,9 @@ export default function NavBar() {
             display={{ base: 'none', md: 'flex' }}
             ml={10}
             align={'center'}
-            justifyContent={'center'}
+           
+            background={useColorModeValue('rgba(19,27,82,0.95)','rgba(94,187,195,0.95)')}
+            w={'100vw'}
           >
             <Box
               width={'25vh'}
@@ -253,12 +255,8 @@ const NAV_ITEMS = [
     href: '/home',
   },
   {
-    label: 'Experience',
-    href: '#',
-  },
-  {
     label: 'Skills',
-    href: '#',
+    href: '/skills',
   },
   {
     label: 'Work',
@@ -266,7 +264,7 @@ const NAV_ITEMS = [
       {
         label: 'Development',
         subLabel: 'websites that i create',
-        href: '#',
+        href: '/work/websites',
       },
       {
         label: 'animation video',

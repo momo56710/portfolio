@@ -19,7 +19,7 @@ export default function Nav() {
   };
   return (
     <>
-      <Box id="navbar">
+      <Box id="navbar" zIndex={'100'}>
         <Navbar />
       </Box>
       <Box id="sidebar">

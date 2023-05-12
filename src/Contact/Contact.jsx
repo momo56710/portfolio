@@ -17,6 +17,7 @@ import {
   Textarea,
   Grid,
   useColorModeValue,
+  useToast,
 } from '@chakra-ui/react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
@@ -31,17 +32,44 @@ import {
 import Nav from '../nav/navfun/nav';
 import { useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 export default function Contact() {
+  const toast = useToast();
   const navigate = useNavigate();
   const form = useRef();
+  const name = useRef();
+  const email = useRef();
+  const message = useRef();
   const sendEmail = e => {
     e.preventDefault();
-    emailjs.sendForm(
-      'service_0ykx0co',
-      'template_pc6s8yc',
-      form.current,
-      'vy45HXUrL9XUUP5gy'
-    );
+    if(name.current.value == "" || email.current.value == "" || message.current.value == ""){
+        toast({
+            title: 'Email not sent',
+            description: 'fill the form please',
+            status: 'error',
+            duration: 9000,
+            isClosable: true,
+          });
+    }
+    else{
+   
+    emailjs
+      .sendForm(
+        'service_0ykx0co',
+        'template_pc6s8yc',
+        form.current,
+        'vy45HXUrL9XUUP5gy'
+      )
+      .then(result => {
+        toast({
+          title: 'Email sent',
+          description: 'Thank u for reaching',
+          status: 'success',
+          duration: 9000,
+          isClosable: true,
+        });
+      });
+    }
   };
   return (
     <motion.div
@@ -176,7 +204,7 @@ export default function Contact() {
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement pointerEvents="none" />
-                            <Input type="text" size="md" name="to_name" />
+                            <Input ref={name} type="text" size="md" name="to_name" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="Email">
@@ -186,12 +214,13 @@ export default function Contact() {
                               pointerEvents="none"
                               children={<FaEnvelope color="gray.800" />}
                             />
-                            <Input type="email" name="from_name" size="md" />
+                            <Input ref={email} type="email" name="from_name" size="md" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="Message">
                           <FormLabel>Message</FormLabel>
                           <Textarea
+                          ref={message}
                             name="message"
                             color="#0c1338"
                             borderColor="gray.300"

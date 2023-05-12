@@ -71,7 +71,7 @@ export default function NavBar() {
           </Flex>
         </Flex>
       </Flex>
-      <Box bg={useColorModeValue('#131B5298', '#E5E4F198')} w={'100vw'}>
+      <Box bg={useColorModeValue('#131B52','#5EBBC3')} w={'100vw'}>
       <Collapse in={isOpen} animateOpacity>
          <MobileNav />
        

@@ -16,7 +16,7 @@ export default function Card({ Preview, title, description, link }) {
   const navigate = useNavigate();
   const [isOpen, steIsOpen] = useState(false);
   return (
-    <Box display={'grid'} alignItems={'center'}>
+    <Box display={'grid'} placeItems={'center'}>
       <motion.div
         whileHover={{ scale: 1.1 }}
         onClick={() => {
@@ -25,9 +25,9 @@ export default function Card({ Preview, title, description, link }) {
         layout
       >
         <Box
-          w={{ base: '100%', sm: '350px' }}
+          w={{ base: '90%', sm: '350px' }}
           bg={useColorModeValue('#0c1338', '#51a1a8')}
-          display={'grid'}
+          margin={'auto'}
           gap={'2em'}
           boxShadow={'2xl'}
           rounded={'lg'}
@@ -37,7 +37,7 @@ export default function Card({ Preview, title, description, link }) {
             cursor: 'pointer',
           }}
         >
-          <Box>
+          <Box >
             <motion.div layout="position">
               <Image src={Preview} /> <br />
               <Heading fontSize={'2xl'} fontFamily={'body'}>

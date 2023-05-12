@@ -274,7 +274,7 @@ const NAV_ITEMS = [
       {
         label: 'graphic design',
         subLabel: 'logos and their branding',
-        href: '#',
+        href: '/work/design',
       },
     ],
   },

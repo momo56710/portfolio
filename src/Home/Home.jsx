@@ -57,7 +57,7 @@ export default function Home() {
                   he built a web page with his photo on it i was so impressed
                   that now i'm building my career about it. <br />
                   i'm a pc enthusiast and a juinor web developer with skills
-                  in video edeting and graphic design
+                  in video editing and graphic design
                 </Text>
               </Text>
             </Box>

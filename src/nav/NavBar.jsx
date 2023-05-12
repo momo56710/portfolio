@@ -19,12 +19,12 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons';
-import { FaBehance, FaEnvelope, FaGithub } from 'react-icons/fa';
+import { FaDiscord,FaInstagram,FaFacebook } from 'react-icons/fa';
 export default function NavBar() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box position={{ base: 'initial', md: 'fixed' }} mr={'2em'} >
+    <Box position={{ base: 'initial', md: 'fixed' }} mr={'2em'}>
       <Flex
         color={useColorModeValue('#E5E4F1', '#131B42')}
         minH={'60px'}
@@ -55,8 +55,10 @@ export default function NavBar() {
             display={{ base: 'none', md: 'flex' }}
             ml={10}
             align={'center'}
-           
-            background={useColorModeValue('rgba(19,27,82,0.95)','rgba(94,187,195,0.95)')}
+            background={useColorModeValue(
+              'rgba(19,27,82,0.95)',
+              'rgba(94,187,195,0.95)'
+            )}
             w={'100vw'}
           >
             <Box
@@ -71,11 +73,10 @@ export default function NavBar() {
           </Flex>
         </Flex>
       </Flex>
-      <Box bg={useColorModeValue('#131B52','#5EBBC3')} w={'100vw'}>
-      <Collapse in={isOpen} animateOpacity>
-         <MobileNav />
-       
-      </Collapse>
+      <Box bg={useColorModeValue('#131B52', '#5EBBC3')} w={'100vw'}>
+        <Collapse in={isOpen} animateOpacity>
+          <MobileNav />
+        </Collapse>
       </Box>
     </Box>
   );
@@ -83,8 +84,8 @@ export default function NavBar() {
 
 const DesktopNav = () => {
   const linkColor = useColorModeValue('#E5E4F1', '#131B42');
-  const hoverLinkColor = useColorModeValue('#5EBBC3', '#131B52')
-  const popoverContentBgColor = useColorModeValue('#131B52','#5EBBC3');
+  const hoverLinkColor = useColorModeValue('#5EBBC3', '#131B52');
+  const popoverContentBgColor = useColorModeValue('#131B52', '#5EBBC3');
 
   return (
     <Stack direction={'row'} spacing={4}>
@@ -102,7 +103,7 @@ const DesktopNav = () => {
                 _hover={{
                   opacity: 1,
                   textDecoration: 'none',
-                  color : hoverLinkColor
+                  color: hoverLinkColor,
                 }}
               >
                 {navItem.label}
@@ -134,14 +135,17 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }) => {
   return (
-    <Link href={href} role={'group'} display={'block'} p={2} rounded={'md'} _hover={
-      {color : useColorModeValue('#5EBBC3', '#131B52')}
-    }>
+    <Link
+      href={href}
+      role={'group'}
+      display={'block'}
+      p={2}
+      rounded={'md'}
+      _hover={{ color: useColorModeValue('#5EBBC3', '#131B52') }}
+    >
       <Stack direction={'row'} align={'center'}>
         <Box>
-          <Text fontWeight={500}>
-            {label}
-          </Text>
+          <Text fontWeight={500}>{label}</Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
         </Box>
         <Flex
@@ -167,20 +171,18 @@ const MobileNav = () => {
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
       <Flex p={'2em'} alignItems={'center'} justifyContent={'space-around'}>
-        <FaGithub
-          color={useColorModeValue('#E5E4F1', '#131B52')}
-          fontSize={'2em'}
-        />
-        <FaEnvelope
-          color={useColorModeValue('#E5E4F1', '#131B52')}
-          fontSize={'2em'}
-        />
-        
-        <FaBehance
-          color={useColorModeValue('#E5E4F1', '#131B52')}
-          fontSize={'2em'}
-        />
-        
+        <a
+          href="https://discordapp.com/users/731554886566674442"
+          target="_blank"
+        >
+          <FaDiscord fontSize={'2em'} />
+        </a>
+        <a href="https://www.instagram.com/momo_56710/" target="_blank">
+          <FaInstagram fontSize={'2em'} />
+        </a>
+        <a href="https://www.facebook.com/2003amine" target="_blank">
+          <FaFacebook fontSize={'2em'} />
+        </a>
       </Flex>
     </Stack>
   );

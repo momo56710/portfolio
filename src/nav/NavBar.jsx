@@ -267,9 +267,9 @@ const NAV_ITEMS = [
         href: '/work/websites',
       },
       {
-        label: 'animation video',
+        label: 'animation videos',
         subLabel: 'some cool animations',
-        href: '#',
+        href: '/work/animations',
       },
       {
         label: 'graphic design',

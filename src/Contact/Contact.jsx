@@ -78,7 +78,7 @@ export default function Contact() {
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
       <Nav />
-      <Box px={'2em'} maxW={'1500px'} margin={'auto'} mt={'7em'}>
+      <Box maxW={'1500px'} margin={'auto'} mt={'7em'}>
         <Grid placeItems={'center'}>
           <Flex w={{base : '90vw' , md : "80vw"}}>
             <Box

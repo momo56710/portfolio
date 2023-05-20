@@ -10,7 +10,6 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Box position={'fixed'} right={'2em'} top={'0.5em'} zIndex={'1000'}><ColorModeSwitcher/></Box>
-      
       <BrowserRouter>
         <RouteRoot/>
       </BrowserRouter>

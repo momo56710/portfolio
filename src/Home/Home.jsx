@@ -32,7 +32,7 @@ export default function Home() {
             textDecor={'underline'}
           >
             <a
-              href="https://drive.google.com/file/d/10kLv2P4PziI8GWXzGostzvU3H64RSjmY/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_LZJm-y5yKyLcLKENzW5t8nZhOUEk10a/view?usp=sharing"
               target="_blank"
             >
               Resume

@@ -12,7 +12,7 @@ export default function WebDev() {
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
       <Nav />
-      <Box ml={'3em'}>
+      <Box ml={{base : '0' , md :'3em'}}>
         <Box maxW={'1500px'} mx={'auto'} mt={'7em'}>
           {' '}
           <Heading textAlign={'center'}>Websites i create</Heading>

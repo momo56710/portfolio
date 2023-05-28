@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Nav from '../nav/navfun/nav';
 import {
@@ -11,6 +11,7 @@ import {
 } from '@chakra-ui/react';
 import myPic from '../assets/me.jpg';
 export default function Home() {
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -27,7 +28,8 @@ export default function Home() {
             web developer,video Editor and somehow a graphic designer
           </Text>
           <Text
-            fontSize={'1.3em'} textAlign={'center'}
+            fontSize={'1.3em'}
+            textAlign={'center'}
             color={useColorModeValue('#5EBBC3', '#131B52')}
             textDecor={'underline'}
           >

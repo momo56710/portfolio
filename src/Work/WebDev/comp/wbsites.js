@@ -1,6 +1,8 @@
 import Bulksup from '../assets/bulksup.png'
 import SchoolProject from '../assets/school security system.png'
 import RockPapperSissor from '../assets/rock paper sissor.png'
+import LoopStudios from '../assets/loopstudios.png'
+import HonneyBee from '../assets/HonneyBee.png'
 const websites = [
     {
         image : Bulksup,
@@ -19,6 +21,18 @@ const websites = [
         title : 'Rock Papper Sissor',
         description : "simple rock papper sissor game",
         link : 'https://rock-paper-sissor-five.vercel.app'
+    },
+    {
+        image : LoopStudios,
+        title : 'loop studios landing page',
+        description : "my first site and it's a simple landing page made with native HTML and CSS",
+        link : 'https://loopstudios-momo56710.vercel.app'
+    },
+    {
+        image : HonneyBee,
+        title : 'honney bee website',
+        description : "my second site and it's an ecommerce website with one product made with native HTML,CSS and JavaScript",
+        link : 'https://honneybee.vercel.app'
     },
 ]
 

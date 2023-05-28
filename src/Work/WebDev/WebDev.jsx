@@ -12,29 +12,31 @@ export default function WebDev() {
       transition={{ duration: 0.75, ease: 'easeOut' }}
     >
       <Nav />
-      <Box maxW={'1500px'} mt={'7em'} ml={{ base: '0', md: '5em' }}>
-        {' '}
-        <Heading textAlign={'center'}>Websites i create</Heading>
-        <Box
-          pt={'3em'}
-          pb={'5em'}
-          placeItems={'center'}
-          display={'flex'}
-          justifyContent={'center'}
-          alignItems={'center'}
-          flexWrap={'wrap'}
-          gap={'3em'}
-        >
-          {websites.map(e => {
-            return (
-              <Card
-                title={e.title}
-                Preview={e.image}
-                description={e.description}
-                link={e.link}
-              />
-            );
-          })}
+      <Box ml={'3em'}>
+        <Box maxW={'1500px'} mx={'auto'} mt={'7em'}>
+          {' '}
+          <Heading textAlign={'center'}>Websites i create</Heading>
+          <Box
+            pt={'3em'}
+            pb={'5em'}
+            placeItems={'center'}
+            display={'flex'}
+            justifyContent={'center'}
+            alignItems={'center'}
+            flexWrap={'wrap'}
+            gap={'3em'}
+          >
+            {websites.map(e => {
+              return (
+                <Card
+                  title={e.title}
+                  Preview={e.image}
+                  description={e.description}
+                  link={e.link}
+                />
+              );
+            })}
+          </Box>
         </Box>
       </Box>
     </motion.div>

@@ -7,7 +7,6 @@ import WebDev from './Work/WebDev/WebDev';
 import AnimationVideos from './Work/animationVideos/AnimationVideos';
 import Contact from './Contact/Contact';
 import CommingSoon from './CommingSoon';
-import GraphicDesign from './GraphicDesign/GraphicDesign';
 export default function RouteRoot() {
   return (
     <Routes>
@@ -16,7 +15,6 @@ export default function RouteRoot() {
       <Route path="/skills" element={<Skills />} />
       <Route path="/work/websites" element={<WebDev />} />
       <Route path="/work/animations" element={<AnimationVideos />} />
-      <Route path="/work/design" element={<GraphicDesign />} />
       <Route path="/contact"  element={<Contact />} />
       <Route path="/comming-soon"  element={<CommingSoon />} />
     

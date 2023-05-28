@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import Nav from '../nav/navfun/nav'
+import Nav from '../../nav/navfun/nav'
 import { Box, Grid, Heading } from '@chakra-ui/react'
 export default function GraphicDesign() {
   return (

@@ -273,11 +273,6 @@ const NAV_ITEMS = [
         subLabel: 'some cool animations',
         href: '/work/animations',
       },
-      {
-        label: 'graphic design',
-        subLabel: 'logos and their branding',
-        href: '/work/design',
-      },
     ],
   },
   {

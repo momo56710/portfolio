@@ -11,8 +11,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 export default function Card({ Preview, title, description, link }) {
-  const buttonScheme = useColorModeValue( '#5EBBC3','#131B52');
-  const buttonTextColor = useColorModeValue( '#131B52','#5EBBC3')
+  const buttonScheme = useColorModeValue('#5EBBC3', '#131B52');
+  const buttonTextColor = useColorModeValue('#131B52', '#5EBBC3');
   const navigate = useNavigate();
   const [isOpen, steIsOpen] = useState(false);
   return (
@@ -31,35 +31,30 @@ export default function Card({ Preview, title, description, link }) {
           gap={'2em'}
           boxShadow={'2xl'}
           rounded={'lg'}
-          color={useColorModeValue('white','#131B52' )}
+          color={useColorModeValue('white', '#131B52')}
           p={6}
           _hover={{
             cursor: 'pointer',
           }}
         >
-          <Box >
-            <motion.div layout="position">
-              <Image src={Preview} /> <br />
-              <Heading fontSize={'2xl'} fontFamily={'body'}>
-                {title}
-              </Heading>
-            </motion.div>
-
-            {isOpen && (
-              <>
-                <Grid gap={'2em'}>
-                  <motion.div>{description}</motion.div>
-                  <motion.div>
-                    <Box textAlign={'center'}>
-                      <a href={link} target="_blank">
-                        {' '}
-                        <Button background={buttonScheme} color={buttonTextColor}>Learn more</Button>
-                      </a>
-                    </Box>
-                  </motion.div>
-                </Grid>
-              </>
-            )}
+          <Box>
+            <Image src={Preview} /> <br />
+            <Heading fontSize={'2xl'} fontFamily={'body'}>
+              {title}
+            </Heading>
+            <Grid gap={'2em'}>
+              <motion.div>{description}</motion.div>
+              <motion.div>
+                <Box textAlign={'center'}>
+                  <a href={link} target="_blank">
+                    {' '}
+                    <Button background={buttonScheme} color={buttonTextColor}>
+                      Take a Look
+                    </Button>
+                  </a>
+                </Box>
+              </motion.div>
+            </Grid>
           </Box>
         </Box>
       </motion.div>

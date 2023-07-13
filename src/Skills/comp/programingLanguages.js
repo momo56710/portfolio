@@ -28,6 +28,15 @@ const programingLanguages = [
         progress : '70%'
     },
     {
+        skill : 'TypeScript',
+        progress : '60%'
+    },
+    {
+        skill : "NextJs",
+        progress : '60%'
+
+    },
+    {
         skill : 'MongoDB',
         progress : '30%'
     },

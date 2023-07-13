@@ -1,7 +1,7 @@
 const SoftSkills = [
     {
         skill : 'Public speaker',
-        progress : '100%'
+        progress : '70%'
     },
     {
         skill : 'Team leader',

@@ -2,37 +2,44 @@ import Bulksup from '../assets/bulksup.png'
 import SchoolProject from '../assets/school security system.png'
 import RockPapperSissor from '../assets/rock paper sissor.png'
 import LoopStudios from '../assets/loopstudios.png'
-import HonneyBee from '../assets/HonneyBee.png'
+import MultiStepForm from '../assets/multi steps form.png'
+import AiPrompt from '../assets/ai prompt.png'
 const websites = [
     {
         image : Bulksup,
         title : 'Bulksup',
-        description : "all-in-one digital agency project is a comprehensive solution for businesses looking to establish an online store or enhance their existing e-commerce platform Bluksup is that type of agencies",
+        description : "A full-service option for companies wishing to launch an online store or improve their current e-commerce platform is an all-in-one digital agency project. Bluksup is one of those organisations.",
         link : 'https://bulksup.vercel.app'
     },
     {
         image : SchoolProject,
         title : 'school security system',
-        description : "The School Security System provides a secure and efficient way to manage school access, track attendance, and respond to emergencies. Our system ensures that only authorized personnel are allowed on site",
+        description : "The School Security System offers a safe and effective means to control who has access to the school, keep track of attendance, and handle emergencies. Only authorised workers are allowed on the premises, thanks to our technology(using dummy rest api).",
         link : 'https://yacine-ui.vercel.app'
     },
     {
         image : RockPapperSissor,
         title : 'Rock Papper Sissor',
-        description : "simple rock papper sissor game",
+        description : "advanced frontend mentor challenge game of rock-paper-scissors",
         link : 'https://rock-paper-sissor-five.vercel.app'
     },
     {
         image : LoopStudios,
         title : 'loop studios landing page',
-        description : "my first site and it's a simple landing page made with native HTML and CSS",
+        description : "My first website is a straightforward landing page created using native HTML and CSS.",
         link : 'https://loopstudios-momo56710.vercel.app'
     },
     {
-        image : HonneyBee,
-        title : 'honney bee website',
-        description : "my second site and it's an ecommerce website with one product made with native HTML,CSS and JavaScript",
-        link : 'https://honneybee.vercel.app'
+        image : MultiStepForm,
+        title : 'multi step form',
+        description : "advanced frontend mentor challenge and the first NextJs and TypeScript website",
+        link : 'https://multi-steps-form-three.vercel.app'
+    },
+    {
+        image : AiPrompt,
+        title : 'Promotopia',
+        description : "I followed a tutorial to thoroughly understand nextJs's backend and authentication features (you can't log in due to the free plan).",
+        link : 'https://ai-prompt-weld.vercel.app'
     },
 ]
 

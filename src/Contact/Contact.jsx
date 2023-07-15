@@ -159,17 +159,7 @@ export default function Contact() {
                     px={5}
                     alignItems="flex-start"
                   >
-                    <IconButton
-                      aria-label="facebook"
-                      variant="ghost"
-                      size="lg"
-                      isRound={true}
-                      _hover={{ bg: '#0D74FF' }}
-                      icon={<FaBehance size="28px" />}
-                      onClick={() => {
-                        navigate('/comming-soon');
-                      }}
-                    />
+                   
                     <a href="https://github.com/momo56710" target="_blank">
                       <IconButton
                         aria-label="github"

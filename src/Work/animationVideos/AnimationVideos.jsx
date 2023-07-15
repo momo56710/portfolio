@@ -3,6 +3,7 @@ import React from 'react';
 import Nav from '../../nav/navfun/nav';
 import { motion } from 'framer-motion';
 import ReactPlayer from 'react-player/youtube';
+import { videos } from './videos';
 export default function AnimationVideos() {
   return (
     <motion.div
@@ -23,9 +24,9 @@ export default function AnimationVideos() {
           flexWrap={'wrap'}
           gap={'3em'}
         >
-          <ReactPlayer url="https://youtube.com/shorts/NoUX0MZZTxA" />
-          <ReactPlayer url="https://youtube.com/shorts/d2RLmTlMRPM" />
-          <ReactPlayer url="https://youtube.com/shorts/x_rIvKhg9S0" />
+          {videos.map(video => (
+            <ReactPlayer url={video} />
+          ))}
         </Box>
       </Box>
     </motion.div>

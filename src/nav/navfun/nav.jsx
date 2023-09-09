@@ -23,10 +23,10 @@ export default function Nav() {
   };
   return (
     <>
-      <Box id="navbar" zIndex={'100'}>
+      <Box id="navbar" zIndex={'10'}>
         <Navbar />
       </Box>
-      <Box id="sidebar">
+      <Box id="sidebar" zIndex={'100'}>
         <SideBar />
       </Box>
     </>

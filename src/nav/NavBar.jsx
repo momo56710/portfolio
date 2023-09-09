@@ -27,6 +27,10 @@ export default function NavBar() {
     <Box position={{ base: 'initial', md: 'fixed' }} mr={'2em'}>
       <Flex
         color={useColorModeValue('#E5E4F1', '#131B42')}
+        background={useColorModeValue(
+          'rgba(19,27,82,0.95)',
+          'rgba(94,187,195,0.95)'
+        )}
         minH={'60px'}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -46,19 +50,17 @@ export default function NavBar() {
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
+            
             _hover={{ bg: 'none' }}
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
           <Flex
             display={{ base: 'none', md: 'flex' }}
             ml={10}
             align={'center'}
-            background={useColorModeValue(
-              'rgba(19,27,82,0.95)',
-              'rgba(94,187,195,0.95)'
-            )}
+            
             w={'100vw'}
           >
             <Box

@@ -43,7 +43,7 @@ export default function SideBar() {
             style={{ cursor: 'pointer' }}
           >
             <Box _hover={{ color: useColorModeValue('#5EBBC3', '#131B52') }}>
-              <a href="https://www.instagram.com/momo_56710/" target="_blank">
+              <a href="https://www.instagram.com/amine_56710/" target="_blank">
                 <FaInstagram fontSize={'2em'} />
               </a>
             </Box>

@@ -1,10 +1,17 @@
 import Bulksup from '../assets/bulksup.png'
+import Adfors from '../assets/adfors.png'
 import SchoolProject from '../assets/school security system.png'
 import RockPapperSissor from '../assets/rock paper sissor.png'
 import LoopStudios from '../assets/loopstudios.png'
 import MultiStepForm from '../assets/multi steps form.png'
 import AiPrompt from '../assets/ai prompt.png'
 const websites = [
+    {
+        image : Adfors,
+        title : 'adfors',
+        description : "Focused on the construction and industrial markets, ADFORS offers solutions based on a complete range of textile and coating technologies using fiberglass yarns, synthetic fibers, and natural fibers.",
+        link : 'adfors.vercel.app'
+    },
     {
         image : Bulksup,
         title : 'Bulksup',

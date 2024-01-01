@@ -34,7 +34,7 @@ export default function Home() {
             textDecor={'underline'}
           >
             <a
-              href="https://drive.google.com/file/d/1_LZJm-y5yKyLcLKENzW5t8nZhOUEk10a/view?usp=sharing"
+              href="https://drive.google.com/file/d/1BE-qhTbGamzIFGx0jmNG9cb0DAGlj_BF/view?usp=sharing"
               target="_blank"
             >
               Resume
